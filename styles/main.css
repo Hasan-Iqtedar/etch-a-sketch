@@ -1,0 +1,23 @@
+body {
+    height: 95vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    border: 1px solid red;;
+}
+
+#gridContainer {
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 5px;
+    background-color: navajowhite;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+}
+
+.cell {
+    background-color: black;
+}
+
