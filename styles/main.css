@@ -40,6 +40,7 @@ main {
 .button {
     width: 40%;
     height: 5%;
+    min-width: 110px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 100%;
