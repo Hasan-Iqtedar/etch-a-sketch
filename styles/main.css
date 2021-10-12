@@ -1,29 +1,32 @@
 body {
     height: 95vh;
     display: flex;
-    align-items: stretch;
-    justify-content: center;
-    border: 2px solid gray;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 1px;
     background-color: black;
 }
 
+.title {
+    text-align: center;
+    color: maroon;
+    font-size: 40px;
+}
+
 main {
     display: flex;
-    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    /* border: 2px solid blue; */
-    margin: auto;
+    border: 2px solid blue;
 }
 
 #grid-container {
-    /* border: 1px solid black; */
-    width: 70%;
-    height: 100%;
+    width: 300px;
+    height: 300px;
     display: grid;
-    grid-gap: 1px;
-    background-color: rgba(245, 245, 245, 0.884);
-    margin-left: auto;
+    background-color: rgb(241, 241, 241);
     grid-template-columns: none;
     grid-template-rows: none;
 }
@@ -31,39 +34,58 @@ main {
 #controls-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width: 30%;
-    /* border: 2px solid green; */
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .button {
-    width: 40%;
-    height: 5%;
-    min-width: 110px;
+    min-width: 150px;
+    min-height: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 100%;
+    font-size: medium;
     font-weight: bold;
     color: maroon;
-    
-    /* border-radius: 7px; */
-}
-
-.cell {
-    background-color:ghostwhite;
 }
 
 .highlighted-cell {
     background-color: black;
 }
 
-.cell:hover {
-    background-color: black;
+@media (min-width: 500px){
+    #grid-container {
+        width: 400px;
+        height: 400px;
+    }
 }
 
-@media(min-width: 500px){
-    #grid-container {
+@media (min-width: 800px){
+
+
+    main {
+        flex-direction: row;
+        width: 100%;
         height: 100%;
     }
+
+    #controls-container {
+        width: 30%;
+    }
+
+    .button {
+        width: 50%;
+        height: 5%;
+        min-width: 110px;
+        min-height: 25px;
+        font-size: 100%;
+    }
+
+    #grid-container {
+        width: 70%;
+        height: 100%;
+    }
+
 }
