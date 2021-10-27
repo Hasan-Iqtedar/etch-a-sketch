@@ -19,7 +19,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 100%;
-    border: 2px solid blue;
+    border: 2px solid gray;
 }
 
 #grid-container {
@@ -63,7 +63,6 @@ main {
 }
 
 @media (min-width: 800px){
-
 
     main {
         flex-direction: row;
